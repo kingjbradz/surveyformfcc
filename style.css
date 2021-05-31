@@ -1,0 +1,31 @@
+body {
+    background-color: rgba(201, 158, 77, 0.809);
+    font-family: sans-serif;
+    display: grid;
+}
+
+.questions {
+    text-align: center;
+    margin: 15px;
+}
+
+#survey-form {
+    display: grid;
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 15px;
+}
+
+#taco-img{
+    padding-top: 30px;
+    height: 300px;
+    width: 400px;
+    justify-self: center;
+}
+
+.top {
+    text-align: center;
+}

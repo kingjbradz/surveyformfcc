@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- User Story #1 - H1 with ID 'title' -->
+        <h1 id="title" class="top">TACO SURVEY</h1>
+        <img src="https://assets.bonappetit.com/photos/5df7f0a5e32cc00009ccdc32/4:3/w_4270,h_3203,c_limit/HLY-FGFP-Cauliflower-Tacos-16x9.jpg" alt="taco" id="taco-img"/>
+        <!-- User Story #2 - Explanation with ID 'description' -->
+        <p id="description" class="top">Taco 'bout your desires!</h2>
+        <!-- User Story #3 - Form with ID 'survey-form'  -->
+        <form id="survey-form">
+            <!-- User Story #4 - Input element with ID 'name' -->
+            <label for="name" class="questions" id="name">Write your name</label>
+            <!-- User Story #10 - corresponding labels -->
+            <!-- User Story #11 - Placeholder text -->
+            <input type="text" id="name-label" placeholder="John Smith"/>
+            <!-- User Story #5 - Input element with ID 'email' -->
+            <!-- User Story #6 - Invalidates if item entered is not email -->
+            <label for="email" class="questions" id="email">Your E-Mail</label>
+            <input type="text" id="email-label" placeholder="johnsmith@mail.com"/>
+            <!-- User Story #7 - Enter number in a field with ID 'number' -->
+            <!-- User Story #8 - If non-number entered, invalid -->
+            <!-- User Story #9 - 'min' and 'max attributes' defined -->
+            <label for="number" class="questions" id="number">How many Tacos you have at a time</label>
+            <input type="number" id="number-label" min="1" max="10" placeholder="5"/>
+            <label for="question" class="questions">What type of tortilla?</label>
+            <!-- User Story #12 - Dropdown with ID 'dropdown' -->
+            <select name="tortillas" id="dropdown" placeholder="Cornflour">
+                <option value="cornflour">Cornflour</option>
+                <option value="flour">Flour</option>
+            </select>
+            <label for="filling" class="questions">What fillings?</label>
+            <div id=filling>
+                    <!-- User Story #14 - Group of checkboxes with value attribute -->
+                <input type="checkbox" id="cheese" value="cheese">
+                <label for="cheese">Cheese</label><br>
+                <input type="checkbox" id="beans" value="beans">
+                <label for="beans">Beans</label><br>
+                <input type="checkbox" id="Lettuce" value="Lettuce">
+                <label for="lettuce">Lettuce</label><br>
+                <input type="checkbox" id="pico-de-gallo" value="pico-de-gallo">
+                <label for="pico-de-gallo">Pico de Gallo</label><br>
+                <input type="checkbox" id="salsa-roja" value="salsa-roja">
+                <label for="salsa-roja">Salsa Roja</label><br>
+                <input type="checkbox" id="mango-salsa" value="mango-salsa">
+                <label for="mango-salsa">Mango Salsa</label><br>
+                <input type="checkbox" id="mince" value="mince">
+                <label for="mince">Mince</label><br>
+                <input type="checkbox" id="mushrooms" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label><br>
+                <input type="checkbox" id="" value="carnitas">
+                <label for="carnitas">Carnitas</label><br>
+                <input type="checkbox" id="pasilla" value="pasilla">
+                <label for="pasilla">Pasilla</label><br>
+                <input type="checkbox" id="cabbage" value="cabbage">
+                <label for="cabbage">Cabbage</label><br>
+                <input type="checkbox" id="mole" value="mole">
+                <label for="mole">Mole</label><br>
+            </div>
+            <label for="sauce" class="questions">What Sauce?</label>
+            <div id="sauce">
+                    <!-- User Story #13 - Radio buttons with name attribute -->
+                <input type="radio" id="mild" value="mild" name="sauce">
+                <label for="mild">Mild</label><br>
+                <input type="radio" id="medium" value="medium" name="sauce">
+                <label for="medium">Medium</label><br>
+                <input type="radio" id="hot" value="hot" name="sauce">
+                <label for="hot">Hot</label><br>
+                <input type="radio" id="very-hot" value="very-hot" name="sauce">
+                <label for="very-hot">Very Hot</label>
+            </div>
+            <!-- User Story #15 - Text area for extra comments -->
+            <label for="textarea" class="questions">Anything extra to add/note?</label>
+            <input type="textarea" placeholder="I want it extra spicy!"/>
+            <!-- User Story #16 - Submit button -->
+            <input type="submit"/>
+        </form>
+        <script src=""></script>
+    </body>
+</html>
